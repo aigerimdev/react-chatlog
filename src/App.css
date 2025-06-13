@@ -72,3 +72,13 @@
 .purple {
   color: purple
 }
+
+.likes-count {
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  padding: 12px;
+  background-color: #e0f7fa;
+  font-weight: bold;
+  margin: 0;
+}
