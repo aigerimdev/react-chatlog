@@ -19,10 +19,12 @@ const App = () => {
   //calculate total likes count
   const totalLikes = messages.filter((msg) => msg.liked).length;
 
+  const senders = [...new Set(messages.map(msg => msg.sender))];
+
   return (
     <div id="App">
       <header>
-        <h1>Chat between Vladimir and Estragon</h1>
+        <h1>Chat between {senders.join(' and ')}</h1>
         <p className="likes-count">
           {totalLikes} ❤️{totalLikes === 1 ? '' : 's'}
         </p>
