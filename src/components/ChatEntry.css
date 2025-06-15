@@ -98,3 +98,16 @@ button {
 .chat-entry.remote .entry-bubble:hover::before {
   background-color: #a9f6f6;
 }
+
+.timestamp {
+  font-size: 0.2em;   /* smaller text */
+  color: grey;        /* lighter color */
+  margin-top: 4px;    /* a bit of space */
+}
+.local .timestamp {
+  text-align: right;
+}
+
+.remote .timestamp {
+  text-align: left;
+}

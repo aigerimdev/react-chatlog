@@ -11,7 +11,9 @@ const ChatEntry = ({id, sender, body, timeStamp, liked, onToggleLike}) => {
       <h2 className="entry-name">{sender}</h2>
       <section className="entry-bubble">
         <p className="entry-body">{body}</p>
-        <TimeStamp time={timeStamp} />
+        <p className="timestamp">
+          <TimeStamp time={timeStamp} />
+        </p>
         <button className="like" onClick={()=> onToggleLike(id)}>
           {liked ? '❤️' : '🤍'}
         </button>
