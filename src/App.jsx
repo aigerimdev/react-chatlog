@@ -16,7 +16,7 @@ const App = () => {
     });
     setMessages(updatedMessages);
   };
-  //calculate total likes count
+
   const totalLikes = messages.filter((msg) => msg.liked).length;
 
   const senders = [...new Set(messages.map(msg => msg.sender))];

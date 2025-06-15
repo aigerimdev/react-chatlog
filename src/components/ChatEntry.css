@@ -100,10 +100,11 @@ button {
 }
 
 .timestamp {
-  font-size: 0.2em;   /* smaller text */
-  color: grey;        /* lighter color */
-  margin-top: 4px;    /* a bit of space */
+  font-size: 0.2em;
+  color: grey;
+  margin-top: 4px;
 }
+
 .local .timestamp {
   text-align: right;
 }
