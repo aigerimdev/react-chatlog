@@ -16,7 +16,7 @@ const App = () => {
     });
     setMessages(updatedMessages);
   };
-
+  //calculate total likes count
   const totalLikes = messages.filter((msg) => msg.liked).length;
 
   return (
@@ -28,8 +28,8 @@ const App = () => {
         </p>
       </header>
       <main>
-        
-        <ChatLog entries={messages} onToggleLik={toggleLike} />
+
+        <ChatLog entries={messages} onToggleLike={toggleLike} />
       </main>
     </div>
   );
